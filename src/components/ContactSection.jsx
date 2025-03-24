@@ -34,7 +34,7 @@ export default function ContactSection() {
       `Nombre: ${formData.name}\nEmail: ${formData.email}\nTeléfono: ${formData.phone}\n\nMensaje:\n${formData.message}`
     )
   
-    window.location.href = `mailto:info@abogados.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:`+contactInfo.email`?subject=${subject}&body=${body}`
   }
 
   return (
